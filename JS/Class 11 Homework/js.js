@@ -6,7 +6,7 @@ console.log(`------- EXERCISE 1 ---------`);
 // let a2 = typeof 3.14;
 // let a3 = typeof false;
 // let a4 = typeof [1, 2, 3, 4];
-// let a5 = typeof new Date();
+// let a5 = typeof -1.5;
 // let a6 = typeof function () {};
 // let a7 = typeof myCar;
 // let a8 = typeof nullVar;
@@ -88,23 +88,22 @@ console.log(`------- EXERCISE 6 ---------`);
 
 console.log(`------- Way 1 ---------`);
 
-let average ="";
-function studentPassing(gradesArray) {
-  let sum = 0;
-  for (let i = 0; i < gradesArray.lenght; i++) {
-    sum += gradesArray[i];
-  }
-  average = sum / gradesArray.lenght
-  return average;
-}
-if(average>=8){
-    alert(`You have passed`)
-}else {
-    alert(`You have failed`)
-}
-let studentGrades1 = [10, 116, 25, 9, 6];
-let passedornot1 = studentPassing(studentGrades1)
+// function studentPassing(gradesArray) {
+//   let sum = 0;
+//   for (let i = 0; i < gradesArray.length; i++) {
+//     sum += gradesArray[i];
+//   }
+//  let average = sum / gradesArray.length;
+//   return average;
+// }
+// let studentGrades1 = [10, 116, 25, 9, 6];
+// let passedornot1 = studentPassing(studentGrades1)
 
+// if(passedornot1>=8){
+//   alert(`You have passed`)
+// }else {
+//   alert(`You have failed`)
+// }
 
 console.log(`------- Way 2 ---------`);
 
@@ -116,7 +115,7 @@ console.log(`------- Way 2 ---------`);
 // let average = result / array.length
 // console.log(average)
 // passingscore = 8;
-// if(average < passingscore){
+// if(average <br passingscore){
 //     alert("you need to study more")
 // }else if(average > 8){
 //     alert("you pass")
@@ -125,6 +124,20 @@ console.log(`------- Way 2 ---------`);
 console.log(`------- EXERCISE 7 ---------`);
 // EXERCISE 7
 // Make an array of ten elements. Make sure four of them to be: Null, undefined, NaN, “” and false (JavaScript falsy values). Create a function that will work for every array in the world :) and it will remove all the falsy values from the array.
+
+arr = ["Hello world", false, 25, true, null, 20 + 10, NaN, undefined];
+
+function removeFa(arr) {
+  let array = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i]) {
+      array.push(arr[i]);
+    }
+  }
+  return array;
+}
+console.log(removeFa(arr));
+
 console.log(`------- EXERCISE 8 ---------`);
 // EXERCISE 8
 // Write a JavaScript function called storyTeller(), that will take as an input parameters the input fields values from the html!
